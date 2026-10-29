@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+.page {
+  min-height: 100vh;
+  overflow-y: auto;
+}
+.main-nav {
+  position: sticky;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-items: center;
+  padding: 8px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(255, 255, 255, 95%);
+  height: 50px;
+}
+.title {
+}
+.search {
+  flex: 1 1 100%;
+  background: transparent;
+}
+.search-input {
+  width: 100%;
+  padding: 8px 24px;
+  border: 1px solid rgb(0, 0, 0, 10%);
+  border-radius: 16px;
+}
+.container {
+  height: 100%;
+  padding: 16px 12px;
+  background: rgb(0, 0, 0, 5%);
+}
+.carousel-wrapper {
+  aspect-ratio: 10 / 3;
+  width: 100%;
+  background: cyan;
+  border-radius: 8px;
+}
