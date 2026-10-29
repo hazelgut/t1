@@ -34,12 +34,43 @@
 }
 .container {
   height: 100%;
-  padding: 16px 12px;
+  padding: 16px 14px;
   background: rgb(0, 0, 0, 5%);
 }
 .carousel-wrapper {
-  aspect-ratio: 10 / 3;
   width: 100%;
-  background: cyan;
-  border-radius: 8px;
+  background: transparent;
+  
+}
+.carousel {
+  aspect-ratio: 7 / 2;
+}
+.carousel-item {
+  width: 100%;
+}
+.carousel-item img {
+  width:100%;
+  height:100%;
+  border-radius: 12px;
+  object-fit:cover;
+}
+.carousel-slider {
+  display: flex;
+  gap:8px;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  height:30px;
+}
+.slider-item {
+  padding: 3px 3px;
+  background: lightgray;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+  &[data-current] {
+    background:red;
+    transform-origin: right center;
+    border-radius:12px;
+    width: 16px;
+  }
 }
